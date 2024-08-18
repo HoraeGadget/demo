@@ -231,7 +231,6 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 
     .single-how-to-buy-item img {
         width: 40px;
-        height: 40px;
         margin-right: 20px;
     }
 
@@ -249,15 +248,13 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
         margin-right: 100px;
         margin-bottom: 20px;
         margin-left:40px;
+        flex-basis:50%;
     }
-.how-to-buy-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .bouncing-image {
     animation: bounce 2s ease-in-out infinite;
+    flex-basis: 50%
+
 }
 
 @keyframes bounce {
@@ -275,10 +272,12 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 }
 
 .container-steps{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    gap:20px;
 }
+
 .how-to-buy-content img {
     grid-column: 4;
 }
@@ -335,29 +334,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
         11. now
 --------------------------------------*/
 
-.container-now {
-    padding: 300px 0;
-    position:relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-.ball-1{
-position: absolute;
-left:-150px;
-bottom: -50px;
-}
-
 .whatsapp-item {
-    position: absolute;
-    left: 300px;
-    bottom: 150px;
+    flex-basis: 50%;
 }
 .telegram-item {
-    position: absolute;
-    left:750px;
-    bottom: 0px;
+    flex-basis: 50%;
 }
 
 /*-------------------------------------
@@ -387,8 +368,8 @@ bottom: -50px;
 
 .container-joinus {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 200px;
+    grid-template-columns:1fr;
+    grid-gap: 50px;
     max-width: 1200px;
     width: 100%;
     padding: 20px;
