@@ -379,7 +379,7 @@ h1 {
 /*-------------------------------------       
         8. Clients-say 
 --------------------------------------*/
-.clients-say{padding:115px 0 80px;background: #f8f9fb;}
+.clients-say{padding:110px 0 0;background: #f9f9f9;}
 
 /*single-testimonial-box */
 .single-testimonial-box  {
@@ -470,13 +470,52 @@ h1 {
     border-radius:0;
 }
 
+/*FAQ*/
+
+.faq{
+    padding: 50px 0 100px;
+}
+details {
+    background-color: transparent;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+summary {
+    padding: .5em 1.3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    transition: height 1s ease;
+}
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    summary:after {
+        content: "\002B";
+    }
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+    details[open] summary:after {
+        content: "\00D7";
+    }
+
+details[open] div {
+    padding: .5em 1em;
+}
 /*-------------------------------------
         12. Contact
 --------------------------------------*/
 .contact {
     background: #2a2d54;
 }
-.footer-top {padding: 112px 0 72px;}
+.footer-top {padding: 112px 0 10px;}
 
 /*.footer-logo*/
 .footer-logo a,.footer-logo a:hover,.footer-logo a:focus{
