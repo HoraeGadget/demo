@@ -185,11 +185,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 }
 .welcome-hero2 {
     position: relative;
-    background: url(../images/joinus/header.jpg)no-repeat;
+    background: url(../images/joinus/header.png)no-repeat;
     background-position: top center;
-    background-size: 125% 400px;
+    background-size: 100%;
     z-index: 1;
-    margin-bottom: 200px;
 }
 .container-header {
 
