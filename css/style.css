@@ -177,7 +177,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 --------------------------------------*/
 .welcome-hero {
     position: relative;
-    background:url(../images/welcome-hero/welcome-banner.jpg)no-repeat;
+    background:url(../images/welcome-hero/welcome-banner.png)no-repeat;
     background-position: center;
     background-size: cover;
     z-index: 1;
@@ -248,8 +248,6 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
     margin: 100px auto;
     padding: 10px;
     background-color: transparent;
-    
-    
 }
 
 .contact-us-txt{
@@ -470,13 +468,16 @@ h1 {
     border-radius:0;
 }
 
+.home-image {
+}
+
 /*FAQ*/
 
 .faq{
     padding: 50px 0 100px;
 }
 details {
-    background-color: #f9f9f9;
+    background-color: transparent;
     color: #000;
     font-size: 1.5rem;
 }
