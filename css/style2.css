@@ -240,6 +240,59 @@ nav.navbar.bootsnav .navbar-toggle {
 /*-------------------------------------
          Agent benefits
 --------------------------------------*/
+
+table {
+    width: auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #000;
+}
+
+th {
+    background-color: #ff4401;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+th:first-child {
+    border-top-left-radius: 20px;
+}
+
+th:last-child {
+    border-top-right-radius: 20px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 20px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 20px;
+}
+
+/*-------------------------------------
+         Agent benefits
+--------------------------------------*/
 .row {
     display: flex;
     justify-content: space-between;
@@ -384,7 +437,19 @@ images grid games
     flex-wrap:wrap;
     justify-content: space-between;
     gap:20px;
+    margin:50px;
 }
+
+.container-steps h2{
+    text-align:left;
+    color:white;
+
+}
+
+    .container-steps h3 {
+        text-align: left;
+        color: white;
+    }
 
 .how-to-buy-content img {
     grid-column: 4;
@@ -415,9 +480,19 @@ images grid games
     text-align: center;
 }
 
-.whyus-txt h2 {
-    font-size: 42px;
-    color: #000;
+    .whyus-txt h2 {
+        margin-top: 50px;
+        font-size: 42px;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+    }
+
+.whyus-txt h3{
+    margin-top: 50px;
+    font-size: 30px;
+    color: #fff;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 45px;
@@ -426,7 +501,7 @@ images grid games
 .whyus-txt p {
     font-size: 18px;
     text-transform: initial;
-    color: #333;
+    color: #fff;
     font-weight: 500;
     max-width: 735px;
     margin: 50px auto;
