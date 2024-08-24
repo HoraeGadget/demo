@@ -299,6 +299,7 @@ tr:last-child td:last-child {
 --------------------------------------*/
 .row {
     display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
@@ -307,38 +308,53 @@ tr:last-child td:last-child {
 .column {
     flex: 1;
     margin: 0 10px;
-    background-color:transparent;
-    padding: auto;
+    background-color: transparent;
+    padding: 20px; /* Adjusted padding for better spacing */
     border-radius: 10px;
     text-align: center;
+    box-sizing: border-box; /* Ensures padding and border are included in element's width */
 }
 
-    .column img {
-        width: auto;
-        height: auto;
-        object-fit: cover;
-        border-radius: 50%;
-        margin-bottom: 15px;
+/* Ensures images scale properly */
+.column img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.column h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.benefits h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.benefits-list h3 {
+    color: white;
+    margin-top: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stacks columns vertically on small screens */
     }
 
-    .column h3 {
-        margin-bottom: 10px;
-        font-size: 18px;
-        color: #fff;
+    .column {
+        margin: 10px 0; /* Adjust margin for vertical stacking */
     }
-   .benefits h2{
-       color:white;
-       text-align:center;
-      
-       font-size:30px;
-   }
-   .benefits-list h3{
-        color:white;
-        margin-top:30px;
-        text-align:left;
-        margin-bottom:20px;
-        margin-left:auto;
-   }
+}
+
 
 .benefits-list ol {
     list-style-type: disc; /* Ensures points are used */
