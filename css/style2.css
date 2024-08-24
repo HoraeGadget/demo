@@ -308,7 +308,7 @@ tr:last-child td:last-child {
     flex: 1;
     margin: 0 10px;
     background-color:transparent;
-    padding: 20px;
+    padding: auto;
     border-radius: 10px;
     text-align: center;
 }
