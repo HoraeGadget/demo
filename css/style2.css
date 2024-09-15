@@ -325,18 +325,28 @@ tr:last-child td:last-child {
         margin-bottom: 20px;
     }
 
-    .agents h2{
-        text-align:left;
-    }
 .agents img {
     position: absolute;
     z-index: -1;
     margin-top: 100px;
     object-fit: cover;
     margin-left: -100px;
+    margin-right: -100px;
     top: 0;
-    width:2000px;
+    width: 3000px;
 }
+
+.agents div p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1;
+}
+
 @media (max-width: 768px) {
     .agents img {
         width: 100%;
@@ -516,6 +526,17 @@ ul.custom-dots {
         }
 }
 
+/* Ensuring the section takes full viewport height */
+.image-container {
+    position: relative;
+    width: 100%; /* Full width of the section */
+    max-width: 1200px; /* Adjust max-width as needed */
+}
+
+    .image-container img {
+        width: 100%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
 
 
 .benefits-list ol {
