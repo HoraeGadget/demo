@@ -30,6 +30,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 20px #E587FF;
+    margin-bottom:50px;
 }
 
 .row {
@@ -283,7 +284,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     }
 /*.menu-ui-design*/
 
-/*.navbar-toggle */
+/*.navbar-toggle*/
 nav.navbar.bootsnav .navbar-toggle {
     position: relative;
     background-color: transparent;
@@ -295,7 +296,7 @@ nav.navbar.bootsnav .navbar-toggle {
     nav.navbar.bootsnav .navbar-toggle i {
         color: #E587FF;
     }
-/*.navbar-toggle */
+/*.navbar-toggle*/
 
 
 /*-------------------------------------
@@ -305,7 +306,7 @@ nav.navbar.bootsnav .navbar-toggle {
     position: relative;
     background-position: center;
     background-size: 100%;
-    z-index: 1;
+    z-index: 3;
     background-color: black;
 }
 
@@ -321,8 +322,10 @@ nav.navbar.bootsnav .navbar-toggle {
 
 /*.welcome-hero-txt*/
 .welcome-hero-txt {
+
+    top: 0; /* Remove the negative top value */
     text-align: left; /* Align text to the left */
-    padding: 50px 0; /* Reduce padding at the top and bottom to move everything higher */
+    padding: 0px 0; /* Reduce padding at the top and bottom to move everything higher */
     position: relative;
     display: flex;
     align-items: flex-start; /* Align items to the top */
@@ -345,26 +348,50 @@ nav.navbar.bootsnav .navbar-toggle {
 
 
     .welcome-hero-txt img {
-        position: relative; /* Image is now in the flow of the flexbox layout */
-        width: 500px;
+        position: relative;
+        width:3000px; /* Make the image responsive */
         height: auto;
-        z-index: 1; /* Places the image behind the text if they overlap */
-        margin-left: 50px; /* Adds space between the text and image */
-        top: -150px; /* Move the image higher */
+        z-index: 1;
+        margin-left: 0; /* Remove extra margin on smaller screens */
+        top: -200px;
     }
 
+@media only screen and (max-width: 768px) { /* For tablets and small screens */
+    .welcome-hero-txt img {
+        width: 100%; /* Adjust image size */
+        margin-left: 0px; /* Add some margin for spacing */
+        top: -200px; /* Adjust top based on smaller size */
+    }
+}
+
+@media only screen and (max-width: 480px) { /* For phones */
+    .welcome-hero-txt img {
+        width: 100%; /* Full width on phones */
+        margin-left: 0;
+        top: -100px; /* Less top adjustment for smaller screens */
+    }
+}
+
+.buttoncenter{
+    position:center;
+}
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust as needed */
+}
 .welcome-btn {
-    display: inline-block;
     width: 230px;
     height: 60px;
     background: #fff;
     color: #000;
     border-radius: 3px;
-    margin-top: 10px;
-    position: relative;
-    z-index: 2; /* Ensure the button stays above the image */
+    margin: 10px auto 50px auto;
     transition: .3s linear;
+    z-index: 3;
 }
+
 
     .welcome-btn:hover {
         background: #000;
@@ -372,8 +399,10 @@ nav.navbar.bootsnav .navbar-toggle {
     }
 
 /* Media query for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 768px)
+{
     .welcome-hero-txt {
+
         flex-direction: column; /* Stack text and image vertically */
         padding: 100px 0 100px; /* Maintain padding as necessary */
         text-align: center;
@@ -394,11 +423,6 @@ nav.navbar.bootsnav .navbar-toggle {
         top: -10px; /* Move the paragraph higher */
     }
 
-    .welcome-hero-txt img {
-        margin: 20px 0; /* Add margin for spacing */
-        top: -10px; /* Move the image higher */
-        align-self: center; /* Center the image */
-    }
 }
 
 /*.welcome-hero-txt*/
@@ -557,7 +581,8 @@ h1 {
         5. Service 
 --------------------------------------*/
 .service {
-    padding: 100px 0 87px;
+    margin-top: -100px; /* Add a negative margin-top value */
+    padding: 0px 0 0px;
     background-color: black;
 }
 
@@ -618,6 +643,9 @@ h1 {
     border: 1px solid #000;
 }
 
+.section {
+    margin-bottom: 0; /* or adjust padding/margin */
+}
 
 /*-------------------------------------       
         8. Clients-say 
