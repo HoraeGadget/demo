@@ -625,10 +625,14 @@ ul.custom-dots {
 }
 
 .agents img {
-    width: 100%;
-    height: auto;
-    justify-content:center;
-    margin-top:200px;
+    position: absolute;
+    z-index: -1;
+    margin-top: 100px;
+    object-fit: cover;
+    margin-left: -100px;
+    margin-right: -100px;
+    top: 0;
+    width: 3000px;
 }
 
 /* Media query for small screens */
