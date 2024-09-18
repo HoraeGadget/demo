@@ -558,6 +558,26 @@ ul.custom-dots {
 /*-------------------------------------
             games text n pic
 --------------------------------------*/
+
+.container-agentimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.agents img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .agents img {
+        width: 100%; /* Keep full width for smaller screens */
+        height: auto;
+    }
+}
+
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
 :root {
