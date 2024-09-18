@@ -1,5 +1,3 @@
-
-
 /*-------------------------------------
 		1.General css (Reset code)
 --------------------------------------*/
@@ -630,7 +628,8 @@ ul.custom-dots {
 --------------------------------------*/
 
 .container-agentimg {
-    position: relative;
+    margin-top:100px;
+    position: absolute;
     padding: 20px;
 }
 
@@ -638,7 +637,6 @@ ul.custom-dots {
     width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
