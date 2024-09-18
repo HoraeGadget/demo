@@ -627,27 +627,23 @@ ul.custom-dots {
             games text n pic
 --------------------------------------*/
 
-.container-agentimg {
-    margin-top:100px;
-    position: absolute;
-    padding: 20px;
-}
 
 .agent-img {
     width: 100%;
     height: auto;
     display: block;
+    margin-top:100px;
 }
 
 @media (max-width: 768px) {
     .agent-img {
-        margin-top: 10px; /* Adjust as needed */
+        margin-top: 50px; /* Adjust as needed */
     }
 }
 
 @media (max-width: 480px) {
     .agent-img {
-        margin-top: 20px; /* Lower the image a bit more on small screens */
+        margin-top: 50px; /* Lower the image a bit more on small screens */
     }
 }
 
