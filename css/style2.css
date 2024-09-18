@@ -637,13 +637,13 @@ ul.custom-dots {
 
 @media (max-width: 768px) {
     .agent-img {
-        margin-top: 50px; /* Adjust as needed */
+        margin-top: 100px; /* Adjust as needed */
     }
 }
 
 @media (max-width: 480px) {
     .agent-img {
-        margin-top: 50px; /* Lower the image a bit more on small screens */
+        margin-top: 100px; /* Lower the image a bit more on small screens */
     }
 }
 
