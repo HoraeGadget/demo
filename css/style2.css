@@ -628,6 +628,7 @@ ul.custom-dots {
     width: 100%;
     height: auto;
     justify-content:center;
+    margin-top:200px;
 }
 
 /* Media query for small screens */
