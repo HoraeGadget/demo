@@ -630,23 +630,29 @@ ul.custom-dots {
 --------------------------------------*/
 
 .container-agentimg {
-    width: 100%;
-    justify-content: center;
+    position: relative;
+    padding: 20px;
 }
 
-.agents img {
+.agent-img {
     width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-/* Media query for small screens */
 @media (max-width: 768px) {
-    .agents img {
-        width: 100%; /* Keep full width for smaller screens */
-        height: auto;
-       margin-bottom:-100px;
+    .agent-img {
+        margin-top: 10px; /* Adjust as needed */
     }
 }
+
+@media (max-width: 480px) {
+    .agent-img {
+        margin-top: 20px; /* Lower the image a bit more on small screens */
+    }
+}
+
 
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
