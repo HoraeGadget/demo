@@ -395,6 +395,16 @@ tr:last-child td:last-child {
         margin-bottom: 20px;
     }
 
+.agents img {
+    position: absolute;
+    z-index: -1;
+    margin-top: 100px;
+    object-fit: cover;
+    margin-left: -100px;
+    margin-right: -100px;
+    top: 0;
+    width: 3000px;
+}
 
 .agents div p {
     position: absolute;
@@ -620,28 +630,21 @@ ul.custom-dots {
 --------------------------------------*/
 
 .container-agentimg {
-    margin-top:50px;
     width: 100%;
     justify-content: center;
 }
 
 .agents img {
-    position: absolute;
-    z-index: -1;
-    margin-top: 100px;
-    object-fit: cover;
-    margin-left: -100px;
-    margin-right: -100px;
-    top: 0;
-    width: 3000px;
+    width: 100%;
+    height: auto;
 }
 
 /* Media query for small screens */
 @media (max-width: 768px) {
     .agents img {
-	    margin-top:50px;
         width: 100%; /* Keep full width for smaller screens */
         height: auto;
+       margin-bottom:-100px;
     }
 }
 
