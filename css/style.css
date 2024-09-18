@@ -360,7 +360,8 @@ nav.navbar.bootsnav .navbar-toggle {
     .welcome-hero-txt img {
         width: 100%; /* Adjust image size */
         margin-left: 0px; /* Add some margin for spacing */
-        top: -200px; /* Adjust top based on smaller size */
+        top: -250px; /* Adjust top based on smaller size */
+        margin-bottom:-100px;
     }
 }
 
@@ -368,7 +369,8 @@ nav.navbar.bootsnav .navbar-toggle {
     .welcome-hero-txt img {
         width: 100%; /* Full width on phones */
         margin-left: 0;
-        top: -100px; /* Less top adjustment for smaller screens */
+        top: -150px; /* Less top adjustment for smaller screens */
+        margin-bottom: -100px;
     }
 }
 
@@ -390,6 +392,32 @@ nav.navbar.bootsnav .navbar-toggle {
     margin: 10px auto 50px auto;
     transition: .3s linear;
     z-index: 3;
+}
+
+@media only screen and (max-width: 768px) { /* For tablets and small screens */
+    .welcome-btn {
+        width: 100px;
+        height: 30px;
+        background: #fff;
+        color: #000;
+        border-radius: 3px;
+        margin: 10px auto 50px auto;
+        transition: .3s linear;
+        z-index: 3;
+    }
+}
+
+@media only screen and (max-width: 480px) { /* For phones */
+    .welcome-btn {
+        width: 100px;
+        height: 30px;
+        background: #fff;
+        color: #000;
+        border-radius: 3px;
+        margin: 10px auto 50px auto;
+        transition: .3s linear;
+        z-index: 3;
+    }
 }
 
 
