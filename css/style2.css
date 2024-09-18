@@ -620,6 +620,7 @@ ul.custom-dots {
 --------------------------------------*/
 
 .container-agentimg {
+    margin-top:250px;
     width: 100%;
     justify-content: center;
 }
