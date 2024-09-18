@@ -637,6 +637,7 @@ ul.custom-dots {
 .agents img {
     width: 100%;
     height: auto;
+    justify-content:center;
 }
 
 /* Media query for small screens */
