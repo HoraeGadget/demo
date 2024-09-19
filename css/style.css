@@ -396,8 +396,8 @@ nav.navbar.bootsnav .navbar-toggle {
 
 @media only screen and (max-width: 768px) { /* For tablets and small screens */
     .welcome-btn {
-        width: 100px;
-        height: 30px;
+        width: 150px;
+        height: 100px;
         background: #fff;
         color: #000;
         border-radius: 3px;
@@ -409,8 +409,8 @@ nav.navbar.bootsnav .navbar-toggle {
 
 @media only screen and (max-width: 480px) { /* For phones */
     .welcome-btn {
-        width: 100px;
-        height: 30px;
+        width: 150px;
+        height: 100px;
         background: #fff;
         color: #000;
         border-radius: 3px;
